@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:control="clr-namespace:WpfApp1"
+        xmlns:views="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="usercontrol below"/>
+        <views:StudentViewUserControl x:Name="StudentViewUserControl" ></views:StudentViewUserControl>
+        <views:StudentViewUserControl x:Name="StudentViewUserControl1" ></views:StudentViewUserControl>
+        <control:MyUserControl1/>
+        <!--<views:StudentsView x:Name = "StudentViewControl" Loaded = "StudentViewControl_Loaded"/>-->
+        <!--<Slider x:Name="slider" Maximum="360"></Slider>
+        <Label Content="{Binding ElementName=slider , Path=Value, StringFormat={}{0:#}}"></Label>
+
+        <Label Target="{Binding ElementName=box}" Content="Enter _text:"/>
+        <TextBox Name="box"/>
+        <Button MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click">OK</Button>
+
+        <ListBox>
+            --><!-- Set content three different ways --><!--
+            <ListBoxItem Content="Item 1"/>
+            <ListBoxItem>Item 2</ListBoxItem>
+            <ListBoxItem>
+                <ListBoxItem.Content>
+                    Item 3
+                </ListBoxItem.Content>
+            </ListBoxItem>
+        </ListBox>
+        <ListView x:Name="ContactsListView"
+        HorizontalAlignment="Center" 
+        VerticalAlignment="Top" 
+                  Margin="0 10 0 10"
+        Width="359">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Hi"></Label>
+                        <Label Content="{Binding Id}" />
+                        <Label Content="{Binding Name}" />
+                        <Label Content="{Binding Address}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+    </StackPanel>
+</Window>
